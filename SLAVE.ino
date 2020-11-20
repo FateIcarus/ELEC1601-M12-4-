@@ -152,8 +152,6 @@ void loop()
             if (joyStatus == -1){
              if (lOut == 1 && cOut == 1 && rOut == 1){
                 driveCommand(0,1);
-                blueToothSerial.print("Object Found");
-                tone(buzzerPin,400,500);
               } else if (lOut == 0 && rOut == 0){
                 driveCommand(1,1);
               } else if (lOut == 1 and rOut == 0){
